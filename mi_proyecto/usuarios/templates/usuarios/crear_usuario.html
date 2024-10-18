@@ -1,0 +1,34 @@
+<!-- usuarios/templates/usuarios/crear_usuario.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <style>
+        /* Estilos para centrar los elementos */
+        body {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro</h1>
+    <form method="post">
+        {% csrf_token %}
+        
+        <label for="id_username">Username:</label>
+        {{ form.username }}<br>
+        <span>Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span><label for="id_email">Email:</label>{{ form.email }}<label for="id_password">Password:</label>{{ form.password }}<br>
+
+        <p>* Your password can’t be too similar to your other personal information.</p>
+        <p>* Your password must contain at least 8 characters.</p>
+        <p>* Your password can't be a commonly used password.</p>
+        <p>* Your password can't be entirely numeric.</p>
+
+        <label for="id_password_confirmation">Password confirmation:</label>
+        {{ form.password_confirmation }}<br>
+        <span>Enter the same password as before, for verification.</span><button type="submit"> Registro</button>
+    </form>
+    <p>Si tienes actualmente una cuenta, inicia su sesión <a href="#">login</a>.</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+CUE: REVISANDO LAS APLICACIONES PREINSTALADAS
+DRILLING: OBTENER PARÁMETROS PASADOS POR URL EN DJANGO
+Para resolver este ejercicio, anteriormente debe haber revisado la lectura y los videos del CUE: 
+Revisando las Aplicaciones Preinstaladas.
+EJERCICIO:
+Partiendo del modelo creado en los Rebound y Drilling del CUE anterior, desarrolla una aplicación que 
+gestione la creación de un usuario reutilizando la aplicación pre-instalada de autenticación.
+Para registrarse debe tener el siguiente enlace: http://localhost:8000/crearusuario/
+
+El aspecto visual de la página de registro es la siguiente:
+Arriba a la izquierda un título con el texto "Registro"
+En la linea siguiente una etiqueta con el texto "Username:" y junto a la etiqueta un campo en blanco.
+En la siguiente linea el siguiente texto "Required. 150 characters or fewer. Letters, digits and @/,/+/-/_ only.
+Junto al texto otra etiqueta con el texto "Email:" y junta a la etiqueta un campo vacío, junto al campo
+vacío otra etiqueta con el texto "Password:" y a la derecha un campo.
+En las 4 lineas siguientes una lista, con 4 textos:
+"* Your password can´t be too similar to your other personal information."
+"* Your password must contain at least 8 characters."
+"* Your password can't be a commonly used password."
+"* Your password can't be entirely numeric."
+Luego en la linea siguiente una etiqueta con el texto "Password confirmation:" y a la derecha un campo.
+EN la linea siguiente el siguiente texto "Enter the same password as before, for verification." 
+en la misma linea y a la derecha un botón, con el texto "Registro"
+Por ultimo, en la ultima linea el siguiente texto "Si tienes actualmente una cuenta, inicia su sesión" y junto a 
+ese texto un enlace con la palabra "login".
+Todos los elementos descritos están centrados a la derecha.
+
+Registro
+Username:"Campo" 
+Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only. Email address:"Campo"    Password:"Campo" 
+Required. 150 characters or fewer. Letters, digits and @/,/+/-/_ only.
+
+* Your password can’t be too similar to your other personal information.
+
+* Your password must contain at least 8 characters.
+
+* Your password can't be a commonly used password.
+
+* Your password can't be entirely numeric.
+Password confirmation:"Campo" 
+Enter the same password as before, for verification. "botón "Registro""
+Si tienes actualmente una cuenta, inicie su sesión login.
